@@ -73,6 +73,4 @@ class DragonTest < Minitest::Test
     assert dragon.hungry?
     assert_equal false, dragon.breathe_fire
   end
-
-
 end

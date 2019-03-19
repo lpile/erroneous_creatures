@@ -33,7 +33,6 @@ class HippogriffTest < Minitest::Test
   def test_when_it_files_it_collects_a_unique_moonrock
     hippogriff = Hippogriff.new("jane", :magenta)
     rock = Moonstone.new("sparkly")
-
     hippogriff.fly(rock)
     assert_equal 1, hippogriff.moonrocks.count
     assert_equal "sparkly", hippogriff.moonrocks.first.color
@@ -47,7 +46,6 @@ class HippogriffTest < Minitest::Test
   def test_when_moonrock_is_magical_when_collected
     hippogriff = Hippogriff.new("jane", :magenta)
     rock = Moonstone.new("sparkly")
-
     hippogriff.fly(rock)
     assert_equal true, rock.magic?
   end
